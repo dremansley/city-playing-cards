@@ -1,4 +1,8 @@
+import CardGrid from "./CardGrid.jsx";
+
 const Homepage = () => {
-    return <></>
+    return <>
+    <CardGrid />
+    </>
 }
 export default Homepage
