@@ -1,6 +1,7 @@
 import {useQuery} from "@tanstack/react-query";
 
-const CardGrid = () => {
+const CardGrid = ({openModal}) => {
+
 
     const getCards = () => {
         return fetch(`${import.meta.env.VITE_DATA_URL}/cards.json`, {
@@ -19,6 +20,8 @@ const CardGrid = () => {
     const {data: cardsData, isSuccess: isCardsDataSuccess} = useQuery({ queryKey: ['card_list'], queryFn: getCards })
 
     return (
+
+        <>
         <div className="container mx-auto p-12 mt-12">
             <h2 className="py-4 pb-8 text-3xl font-bold bg-clip-text">
                 Card Collection
@@ -32,13 +35,14 @@ const CardGrid = () => {
                     >
                         <img src={card.picture} alt={card.name} className="w-full rounded-md mb-4"/>
                         <div
-                            className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 opacity-0 transition-opacity duration-300 group-hover:opacity-100" onClick={openModal}>
                             <span className="text-lg font-semibold text-white">View Card Details</span>
                         </div>
                     </div>
                 ))}
             </div>
         </div>
+            </>
     );
 };
 

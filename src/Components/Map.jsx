@@ -1,10 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css'; // Import Mapbox CSS
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const Map = () => {
     const mapContainerRef = useRef(null);
-    const [map, setMap] = useState(null);
 
     useEffect(() => {
         mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_KEY;
@@ -19,13 +18,10 @@ const Map = () => {
     }, []);
 
     return (
-        <div className="flex flex-col h-screen px-12 py-6">
-            <h2 className="py-4 pb-8 text-3xl font-bold bg-clip-text">
-                Card Map
-            </h2>
+        <div className="w-full h-64 mt-2 bg-gray-200 rounded-lg">
             <div
                 ref={mapContainerRef}
-                className="flex-1 rounded-lg shadow-lg p-0"
+                className="flex-1 rounded-lg shadow-lg p-0 w-100 h-64"
             />
         </div>
     );

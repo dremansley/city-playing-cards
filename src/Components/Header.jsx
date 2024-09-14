@@ -24,20 +24,16 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/collection" className="text-gray-600 hover:text-blue-500">
-                                    Cards
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/map" className="text-gray-600 hover:text-blue-500">
-                                    Card Map
-                                </Link>
-                            </li>
-                            <li>
                                 <Link to="/about" className="text-gray-600 hover:text-blue-500">
                                     About
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/collection" className="text-gray-600 hover:text-blue-500">
+                                    Cards
+                                </Link>
+                            </li>
+
                             <li>
                                 <Link to="/contact" className="text-gray-600 hover:text-blue-500">
                                     Contact
@@ -86,20 +82,17 @@ const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/collection" className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
-                                Cards
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/map" className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
-                                Card Map
-                            </Link>
-                        </li>
-                        <li>
                             <Link to="/about" className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
                                 About
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/collection"
+                                  className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
+                                Cards
+                            </Link>
+                        </li>
+
                         <li>
                             <Link to="/contact" className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
                                 Contact

@@ -1,27 +1,26 @@
 const TopSection = () => {
     const backgroundImage = {
         backgroundAttachment: "fixed",
-        backgroundImage: "url('https://nypost.com/wp-content/uploads/sites/2/2022/08/chester-uk-named-worlds-prettiest-city-03.jpg?quality=75&strip=all')",
+        backgroundImage:
+            "url('https://nypost.com/wp-content/uploads/sites/2/2022/08/chester-uk-named-worlds-prettiest-city-03.jpg?quality=100')",
     };
 
     return (
-        <>
         <div
-            className="relative py-24 overflow-hidden bg-fixed bg-cover bg-center"
+            className="relative py-48 overflow-hidden bg-fixed bg-cover bg-center"
             style={backgroundImage}
         >
             <div className="absolute inset-0 bg-black opacity-50"></div>
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-                <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl">Welcome to Chester Cards</h1>
-                <p className="mt-4 text-lg md:text-xl lg:text-2xl">
-                    Experience Chester through playing cards
+
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+                <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl leading-tight">
+                    Welcome to Chester Cards
+                </h1>
+                <p className="mt-4 text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl">
+                    Experience Chester through beautifully designed playing cards that capture the city’s landmarks.
                 </p>
-                <button className="px-8 py-3 mt-8 text-lg font-semibold text-white transition duration-300 ease-in-out bg-blue-600 rounded-full hover:bg-blue-700 shadow-lg">
-                    View Cards
-                </button>
             </div>
         </div>
-            </>
     );
 };
 
