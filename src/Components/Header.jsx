@@ -13,8 +13,8 @@ const Header = () => {
         <header className="bg-white">
             <div className="container mx-auto px-4 py-6 flex justify-between items-center">
                 <div className="flex items-center space-x-8">
-                    <h1 className="text-2xl font-bold text-blue-500">
-                        <Link to="/">Chester Cards</Link>
+                    <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">
+                        Chester Cards
                     </h1>
                     <nav className="hidden md:block">
                         <ul className="flex space-x-6">
