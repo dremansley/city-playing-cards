@@ -16,7 +16,7 @@ const Homepage = () => {
     return <>
         <section
             className="relative bg-cover bg-center bg-fixed md:bg-cover sm:bg-contain"
-            style={{backgroundImage: `url("./Chester.png")`, backgroundAttachment: "fixed"}}
+            style={{backgroundImage: `url("./Chester.png")`, backgroundAttachment: "scroll"}}
         >
             <Header/>
             <About/>
