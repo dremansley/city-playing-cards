@@ -10,37 +10,37 @@ const Header = () => {
     };
 
     return (
-        <header className="bg-white">
+        <header className="">
             <div className="container mx-auto px-4 py-6 flex justify-between items-center">
                 <div className="flex items-center space-x-8">
-                    <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">
+                    <h1 className="text-2xl font-bold text-grey-700 z-20">
                         Chester Cards
                     </h1>
-                    <nav className="hidden md:block">
-                        <ul className="flex space-x-6">
-                            <li>
-                                <Link to="/" className="text-gray-600 hover:text-blue-500">
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/about" className="text-gray-600 hover:text-blue-500">
-                                    About
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/collection" className="text-gray-600 hover:text-blue-500">
-                                    Cards
-                                </Link>
-                            </li>
+                    {/*<nav className="hidden md:block z-20">*/}
+                    {/*    <ul className="flex space-x-6">*/}
+                    {/*        <li>*/}
+                    {/*            <Link to="/" className="text-gray-600 hover:text-blue-500">*/}
+                    {/*                Home*/}
+                    {/*            </Link>*/}
+                    {/*        </li>*/}
+                    {/*        <li>*/}
+                    {/*            <Link to="/about" className="text-gray-600 hover:text-blue-500">*/}
+                    {/*                About*/}
+                    {/*            </Link>*/}
+                    {/*        </li>*/}
+                    {/*        <li>*/}
+                    {/*            <Link to="/collection" className="text-gray-600 hover:text-blue-500">*/}
+                    {/*                Cards*/}
+                    {/*            </Link>*/}
+                    {/*        </li>*/}
 
-                            <li>
-                                <Link to="/contact" className="text-gray-600 hover:text-blue-500">
-                                    Contact
-                                </Link>
-                            </li>
-                        </ul>
-                    </nav>
+                    {/*        <li>*/}
+                    {/*            <Link to="/contact" className="text-gray-600 hover:text-blue-500">*/}
+                    {/*                Contact*/}
+                    {/*            </Link>*/}
+                    {/*        </li>*/}
+                    {/*    </ul>*/}
+                    {/*</nav>*/}
                 </div>
                 <div className="flex items-center space-x-4">
                     <a

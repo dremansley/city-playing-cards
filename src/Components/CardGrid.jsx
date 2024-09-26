@@ -43,10 +43,10 @@ const CardGrid = ({openModal}) => {
                                     className="w-full rounded-md mb-4"
                                 />
                                 <div
-                                    className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                                    className="absolute inset-0 flex items-center justify-center opacity-50 transition-opacity duration-300 group-hover:opacity-100"
                                     onClick={openModal}
                                 >
-                                    <span className="text-lg font-semibold text-white">View Card Details</span>
+                                    {/*<span className="text-lg font-semibold text-white">View Card Details</span>*/}
                                 </div>
                             </div>
                         </div>
