@@ -14,7 +14,7 @@ const Homepage = () => {
     const closeModal = () => setIsOpen(false);
 
     return <>
-        <section className="relative bg-cover bg-fixed" style={{ backgroundImage: `url("./Chester.png")`, backgroundSize:"cover", backgroundAttachment:"fixed", backgroundPosition:"center" }}>
+        <section className="relative bg-cover bg-fixed" style={{ backgroundImage: `url("./Chester.png")`,  backgroundAttachment:"fixed", backgroundPosition:"center" }}>
         <Header/>
         <About/>
         </section>
