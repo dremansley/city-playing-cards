@@ -14,14 +14,17 @@ const Homepage = () => {
     const closeModal = () => setIsOpen(false);
 
     return <>
-        <section className="relative bg-cover bg-fixed" style={{ backgroundImage: `url("./Chester.png")`,  backgroundAttachment:"fixed", backgroundPosition:"center" }}>
-        <Header/>
-        <About/>
+        <section
+            className="relative bg-cover bg-center bg-fixed md:bg-cover sm:bg-contain"
+            style={{backgroundImage: `url("./Chester.png")`, backgroundAttachment: "fixed"}}
+        >
+            <Header/>
+            <About/>
         </section>
         <CardGrid openModal={openModal}/>
 
         <Contact/>
-        <CardDetails isOpen={isOpen} onClose={closeModal} />
+        <CardDetails isOpen={isOpen} onClose={closeModal}/>
 
     </>
 }
