@@ -3,7 +3,7 @@ import BuyButton from "./BuyButton.jsx";
 const About = () => {
     return (
        <>
-            <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+            <div className="absolute inset-0 bg-black bg-opacity-0"></div>
 
             <section className="container mx-auto relative z-10 md:pt-20 md:pb-20 px-4 md:px-8 pt-10">
                 <div className="flex flex-col items-center justify-between md:flex-row">
