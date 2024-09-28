@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <div className="bg-gray-100 flex items-center justify-center md:py-24" >
+        <div className="bg-gray-100 flex items-center justify-center md:py-24" id="contact">
             <div className="bg-white p-8 rounded-lg shadow-lg w-full md:max-w-lg">
                 <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Us</h2>
 

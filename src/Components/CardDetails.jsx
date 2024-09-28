@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Map from "./Map.jsx";
 import {IconButton, Typography} from "@mui/material";
 import {CloseOutlined} from "@mui/icons-material";

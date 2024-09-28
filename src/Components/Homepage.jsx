@@ -1,7 +1,6 @@
 import CardGrid from "./CardGrid";
-import TopSection from "./TopSection.jsx";
 import Header from "./Header";
-import About from "./About";
+import TopSection from "./TopSection.jsx";
 import Contact from "./Contact.jsx";
 import CardDetails from "./CardDetails.jsx";
 import {useState} from "react";
@@ -14,13 +13,8 @@ const Homepage = () => {
     const closeModal = () => setIsOpen(false);
 
     return <>
-        <section
-            className="relative bg-cover bg-center bg-fixed md:bg-cover sm:bg-contain"
-            style={{backgroundImage: `url("./Chester.png")`, backgroundAttachment: "scroll"}}
-        >
-            <Header/>
-            <About/>
-        </section>
+
+            <TopSection/>
         <CardGrid openModal={openModal}/>
 
         <Contact/>

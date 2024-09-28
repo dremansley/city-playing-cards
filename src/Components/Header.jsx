@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Instagram, Facebook, Twitter, CloseOutlined, MenuOutlined } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import {HashLink} from "react-router-hash-link";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,25 +20,15 @@ const Header = () => {
                     <nav className="hidden md:block z-20">
                         <ul className="flex space-x-6">
                             <li>
-                                <Link to="/" className="text-gray-600 hover:text-blue-500">
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/about" className="text-gray-600 hover:text-blue-500">
-                                    About
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="/collection" className="text-gray-600 hover:text-blue-500">
+                                <HashLink smooth to="#cards" className="text-gray-600 hover:text-blue-500 font-medium">
                                     Cards
-                                </Link>
+                                </HashLink>
                             </li>
 
                             <li>
-                                <Link to="/contact" className="text-gray-600 hover:text-blue-500">
+                                <HashLink smooth to="#contact" className="text-gray-600 hover:text-blue-500 font-medium">
                                     Contact
-                                </Link>
+                                </HashLink>
                             </li>
                         </ul>
                     </nav>
@@ -77,26 +68,15 @@ const Header = () => {
                 <nav className="md:hidden bg-white shadow-lg border-t border-gray-200">
                     <ul className="flex flex-col space-y-4 px-4 py-4">
                         <li>
-                            <Link to="/" className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/about" className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
-                                About
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/collection"
-                                  className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
+                            <HashLink smooth to="#cards" className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
                                 Cards
-                            </Link>
+                            </HashLink>
                         </li>
 
                         <li>
-                            <Link to="/contact" className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
+                            <HashLink smooth to="#contact" className="block text-gray-600 hover:text-blue-500 py-2 px-4 rounded">
                                 Contact
-                            </Link>
+                            </HashLink>
                         </li>
                     </ul>
                 </nav>

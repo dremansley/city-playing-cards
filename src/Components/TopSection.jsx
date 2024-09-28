@@ -1,30 +1,38 @@
+import BuyButton from "./BuyButton.jsx";
+import Header from "./Header.jsx";
+
 const TopSection = () => {
-    const backgroundImage = {
-        // backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        backgroundPosition:"right",
-        backgroundRepeat: "no-repeat",
-         backgroundImage: 'url("https://wrpartners.co.uk/wp-content/uploads/2024/05/shutterstock_1151587373-1440x550.jpg")',
-        height:"50vh"
-    };
-
     return (
-        <div
-            className="relative py-48 overflow-hidden bg-fixed bg-cover bg-center"
-            style={backgroundImage}
-        >
-            <div className="absolute inset-0 bg-black opacity-40"></div>
+           <section
+               className="relative bg-cover bg-center bg-fixed md:bg-cover sm:bg-contain h-screen"
+               style={{backgroundImage: `url("./Chester.png")`, backgroundAttachment: "scroll"}}
+           >
+           <Header/>
+            <div className="absolute inset-0 bg-black bg-opacity-0"></div>
 
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-                <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl leading-tight">
-                    Welcome to Chester Cards
-                </h1>
-                <p className="mt-4 text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl">
-                    Experience Chester through beautifully designed playing cards that capture the city’s landmarks.
-                </p>
-            </div>
-        </div>
+            <section className="container mx-auto relative z-10 md:pt-20 md:pb-20 px-4 md:px-8 pt-10">
+                <div className="flex flex-col items-center justify-between md:flex-row">
+
+                    <div className="w-full md:w-1/2 lg:w-5/12 text-center md:text-left">
+                        <h2 className="text-3xl text-grey-800 font-bold md:text-4xl lg:text-5xl leading-tight">
+                            Explore Chester's Playing Cards
+                        </h2>
+                        <p className="mt-4 text-lg text-grey-700 md:text-xl leading-relaxed">
+                            Discover beautifully designed playing cards inspired by city attractions from around Chester
+                        </p>
+                        <BuyButton />
+                    </div>
+
+                    <div className="w-full mt-8 md:mt-0 md:w-1/2 lg:w-6/12">
+                        <img
+                            src="https://dobby-club.com/cdn/shop/products/PSPC_Mockup_1_800x.png?v=1680097575"
+                            alt="Custom Playing Cards"
+                            className="object-cover w-full h-full rounded-lg"
+                        />
+                    </div>
+                </div>
+            </section>
+           </section>
     );
 };
 
