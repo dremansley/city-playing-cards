@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 import BuyButton from "./BuyButton.jsx";
 
 const cardVariants = {
-    hidden: { opacity: 0, y: -100, rotate: -30 },
+    hidden: { opacity: 0, y: -100, rotate: -15 },
     visible: (i) => ({
         opacity: 1,
         y: 0,
         rotate: 0,
         transition: {
-            delay: i * 0.1,
+            delay: i * 0.08,
             type: "spring",
-            stiffness: 500,
-            damping: 15,
+            stiffness: 120,
+            damping: 20,
         },
     }),
-};
+}
 
 
 const CardGrid = ({ openModal }) => {
