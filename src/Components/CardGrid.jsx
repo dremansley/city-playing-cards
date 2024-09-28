@@ -4,15 +4,14 @@ import BuyButton from "./BuyButton.jsx";
 
 const cardVariants = {
     hidden: { opacity: 0, y: -100, rotate: -15 },
-    visible: (i) => ({
+    visible: () => ({
         opacity: 1,
         y: 0,
         rotate: 0,
         transition: {
-            delay: i * 0.08,
-            type: "spring",
-            stiffness: 120,
-            damping: 20,
+            type: "tween",
+            duration: 1,
+            ease: "easeInOut",
         },
     }),
 }
